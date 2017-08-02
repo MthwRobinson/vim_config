@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8' />
+    <title></title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.39.1/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.39.1/mapbox-gl.css' rel='stylesheet' />
+    <style>
+        body { margin:0; padding:0; }
+        #map { position:absolute; top:0; bottom:0; width:100%; }
+    </style>
+</head>
+<body>
+
+<div id='map'></div>
+<script>
+mapboxgl.accessToken = 'pk.eyJ1IjoibXRod3JvYmluc29uIiwiYSI6ImNqNXUxcXcwaTAyamcyd3J4NzBoN283b3AifQ.JIfgHM7LDVb34sWhN4L8aA';
+var map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/mapbox/dark-v9',
+    center: [-96, 37.8],
+    zoom: 3
+});
+
+map.on('load', function () {
+
+    map.addLayer({
+        "id": "points",
+        "type": "symbol",
+        "source": {
+            "type": "geojson",
+            "data": {
+                "type": "FeatureCollection",
+                "features": [
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                45.34375,
+                2.03711
+            ]
+        },
+        "properties": {
+            "title": "Somalia: Suspected Terrorist Group Al-Shabaab Reportedly Kills 24 Troops in Ambush in Mogadishu",
+            "icon": "fire-station"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                13.15712,
+                11.84692
+            ]
+        },
+        "properties": {
+            "title": "Report Says Suicide Bombers Kill Five People in Igawa-Meme Locality of Northern Cameroon",
+            "icon": "fire-station"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                46.72185,
+                24.68773
+            ]
+        },
+        "properties": {
+            "title": "Saudi Arabia: Attack in Shite Area Kills Security Officer",
+            "icon": "fire-station"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                69.17233,
+                34.52813
+            ]
+        },
+        "properties": {
+            "title": "The Latest: Afghanistan Says 2 Iraq Embassy Staff Killed",
+            "icon": "fire-station"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                35.26993,
+                0.52036
+            ]
+        },
+        "properties": {
+            "title": "Kenyan Media: Unknown Gunmen Attack Kenyan VP's Home",
+            "icon": "fire-station"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                36.81667,
+                -1.28333
+            ]
+        },
+        "properties": {
+            "title": "Kenyan Police: Man With Machete Attacks VP Ruto's Home",
+            "icon": "fire-station"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                45.1212,
+                2.1381
+            ]
+        },
+        "properties": {
+            "title": "Uganda Says 12 Killed in Somalia Shabaab Attack",
+            "icon": "fire-station"
+        }
+    },
+
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                41.7733,
+                38.15754
+            ]
+        },
+        "properties": {
+            "title": "One soldier killed, two wounded in PKK attack in Turkey's Siirt",
+            "icon": "fire-station"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                49.9875,
+                26.59361
+            ]
+        },
+        "properties": {
+            "title": "Saudi Arabia: Attack in Shite area kills security officer",
+            "icon": "fire-station"
+        }
+    },
+
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                67.0822,
+                24.9056
+            ]
+        },
+        "properties": {
+            "title": "Thailand: Police: Car bombing targets Iraq Embassy in Kabul",
+            "icon": "fire-station"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                49.85,
+                58.41667
+            ]
+        },
+        "properties": {
+            "title": "Afghanistan: Tribal elder killed in an explosion in Nangarhar province of Afghanistan",
+            "icon": "fire-station"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                65.71013,
+                31.61332
+            ]
+        },
+        "properties": {
+            "title": "Taliban attacks kill 16 policemen in S. Afghanistan .",
+            "icon": "fire-station"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                71.52448,
+                34.74771
+            ]
+        },
+        "properties": {
+            "title": "Official Says 12 Taliban Killed In Eastern Afghanistan",
+            "icon": "fire-station"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                43.6498,
+                3.11383
+            ]
+        },
+        "properties": {
+            "title": "Somalia: Jubbaland Minister Escapes Bomb Attack on Convoy in Southwestern Region of Gedo",
+            "icon": "fire-station"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                74.35071,
+                31.558
+            ]
+        },
+        "properties": {
+            "title": "Blast leaves dozens dead in Pakistan's Lahore",
+            "icon": "fire-station"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                44.20667,
+                15.35472
+            ]
+        },
+        "properties": {
+            "title": "Suspected Qaeda Gunmen Kill 3 Yemeni Soldiers: Army",
+            "icon": "fire-station"
+        }
+    }
+]
+            }
+        },
+        "layout": {
+            "icon-image": "{icon}-15",
+            "text-field": "{title}",
+            "text-font": ["Open Sans Semibold", "Arial Unicode MS Bold"],
+            "text-offset": [0, 0.6],
+            "text-anchor": "top"
+        },
+        "paint": {
+        	"text-color" : "white"
+        }
+    });
+});
+</script>
+</body>
+</html>
