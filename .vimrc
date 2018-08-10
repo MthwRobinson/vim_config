@@ -22,13 +22,15 @@ Plugin 'vim-airline/vim-airline-themes'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'leafgarland/typescript-vim'
+Plugin 'pangloss/vim-javascript'
+Plugin 'mxw/vim-jsx'
 "Plugin 'davidhalter/jedi-vim'
 
 " Color Themes
 Plugin 'colors'
 
 call vundle#end()
-colorscheme delek
+colorscheme jellybeans
 filetype plugin indent on
 
 """"""""
