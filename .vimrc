@@ -17,8 +17,8 @@ Plugin 'gcmt/breeze.vim'
 Plugin 'kien/ctrlp.vim'
 Plugin 'SirVer/ultisnips'
 Plugin 'tomtom/tcomment_vim'
-Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
+" Plugin 'vim-airline/vim-airline'
+" Plugin 'vim-airline/vim-airline-themes'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'leafgarland/typescript-vim'
@@ -124,8 +124,8 @@ let g:UltiSnipsJumpBackwardTrigger="<c-k>"
 let g:did_UltiSnips_vim_after = 1
 
 " vim-airline
-let g:airline#extensions#tabline#enabled = 1
-let g:airline_powerline_fonts = 1
+" let g:airline#extensions#tabline#enabled = 0
+" let g:airline_powerline_fonts = 0
 
 "
 " Basic shortcuts definitions
@@ -153,8 +153,8 @@ inoremap <C-z>  <Esc>:undo<CR>
 nnoremap <C-y>  :redo<CR>
 inoremap <C-y>  <Esc>:redo<CR>
 " Tabs
-let g:airline_theme='badwolf'
-let g:airline#extensions#tabline#enabled = 0
+" let g:airline_theme='badwolf'
+" let g:airline#extensions#tabline#enabled = 0
 nnoremap <C-b>  :tabprevious<CR>
 inoremap <C-b>  <Esc>:tabprevious<CR>i
 nnoremap <C-n>  :tabnext<CR>
