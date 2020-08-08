@@ -26,6 +26,9 @@ Plugin 'pangloss/vim-javascript'
 Plugin 'mxw/vim-jsx'
 "Plugin 'davidhalter/jedi-vim'
 
+" Automatically remove trailing white space
+autocmd BufWritePre * %s/\s\+$//e
+
 " Color Themes
 Plugin 'colors'
 
@@ -176,3 +179,7 @@ noremap  <Leader>g :GitGutterToggle<CR>
 if filereadable(expand("~/.vimrc.local"))
   source ~/.vimrc.local
 endif
+
+set tw=88
+set colorcolumn=88
+
