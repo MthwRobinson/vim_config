@@ -7,6 +7,7 @@ set nocompatible
 filetype off
 
 set rtp+=~/.vim/bundle/Vundle.vim
+set rtp+=/usr/local/go/misc/vim
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
@@ -77,6 +78,8 @@ set tabstop=2 shiftwidth=2 expandtab
 "set list
 
 inoremap <C-U> <C-G>u<C-U>
+inoremap jk <esc>
+inoremap kj <esc>
 
 set number
 set hlsearch
