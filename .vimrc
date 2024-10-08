@@ -16,12 +16,12 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'tpope/vim-surround'
 Plugin 'gcmt/breeze.vim'
 Plugin 'kien/ctrlp.vim'
-Plugin 'SirVer/ultisnips'
+" Plugin 'SirVer/ultisnips'
 Plugin 'tomtom/tcomment_vim'
 " Plugin 'vim-airline/vim-airline'
 " Plugin 'vim-airline/vim-airline-themes'
 Plugin 'airblade/vim-gitgutter'
-Plugin 'Valloric/YouCompleteMe'
+" Plugin 'Valloric/YouCompleteMe'
 Plugin 'leafgarland/typescript-vim'
 Plugin 'pangloss/vim-javascript'
 Plugin 'mxw/vim-jsx'
@@ -69,6 +69,10 @@ set laststatus=0
 set ruler
 set showcmd
 set wildmenu
+
+" Needed for typescript
+" ref: https://jameschambers.co.uk/vim-typescript-slow
+set re=0
 
 set autoread
 
@@ -183,6 +187,5 @@ if filereadable(expand("~/.vimrc.local"))
   source ~/.vimrc.local
 endif
 
-set tw=88
-set colorcolumn=88
-
+set tw=100
+set colorcolumn=100
